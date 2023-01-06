@@ -1,0 +1,6 @@
+<% @title = 'Index' %>
+
+<%= turbo_frame_tag "apps" do %>
+  <%= render "apps/empty_state" %>
+  <%= render @apps %>
+<% end %>
