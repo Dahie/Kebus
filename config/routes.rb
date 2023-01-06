@@ -1,9 +1,7 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root to: "pages#home"
   devise_for :users
-  resources :quotes do
-    resources :line_item_dates, except: [:index, :show] do
-      resources :line_items, except: [:index, :show]
-    end
-  end
 end

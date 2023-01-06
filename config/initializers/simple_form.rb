@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 SimpleForm.setup do |config|
   # Wrappers configration
   config.wrappers :default, class: "form__group" do |b|
