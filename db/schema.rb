@@ -10,9 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_06_112328) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_06_123404) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "postgis"
 
   create_table "app_regions", force: :cascade do |t|
     t.bigint "app_id"
@@ -37,6 +38,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_06_112328) do
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.geometry "area", limit: {:srid=>0, :type=>"geometry"}
+    t.text "wkt_string"
   end
 
   create_table "users", force: :cascade do |t|
