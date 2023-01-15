@@ -8,6 +8,7 @@ ruby File.read('.ruby-version').strip
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.0"
 gem 'activerecord-postgis-adapter'
+gem 'rgeo-geojson'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -32,6 +33,8 @@ gem "stimulus-rails"
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
 gem "cssbundling-rails"
 
+gem 'importmap-rails', '~> 1.1'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
@@ -53,7 +56,7 @@ gem "bootsnap", require: false
 gem "simple_form", "~> 5.1.0"
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -85,4 +88,3 @@ gem "bullet", "~> 7.0"
 gem "pg", "~> 1.4"
 
 gem "rails_admin", "~> 3.1"
-gem "sassc-rails"
