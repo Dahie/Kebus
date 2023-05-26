@@ -11,7 +11,7 @@ class GeojsonBuilder
   end
 
   def write
-    File.write('regions.geojson', geojson)
+    File.write('regions.json', geojson)
   end
 
   private
