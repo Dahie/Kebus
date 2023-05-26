@@ -8,15 +8,14 @@ ruby '3.2.1'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.0"
 gem 'activerecord-postgis-adapter'
+gem 'rgeo'
 gem 'rgeo-geojson'
+gem "rgeo-proj4"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
 gem "devise", "~> 4.8.1"
-
-# Use postgresql as the database for Active Record
-gem "mysql2"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -85,6 +84,8 @@ end
 
 gem "bullet", "~> 7.0"
 
-gem "pg", "~> 1.4"
+gem "pg", "~> 1.5"
 
 gem "rails_admin", "~> 3.1"
+
+gem "dockerfile-rails", ">= 1.0", group: :development

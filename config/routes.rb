@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   root to: "pages#home"
   devise_for :users
 
-  resources :apps, only: [:index]
+  resources :apps, only: [:index] do
+    collection do
+      get :health
+    end
+  end
 end

@@ -5,4 +5,8 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def health
+    head :ok
+  end
 end

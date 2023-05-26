@@ -16,7 +16,7 @@ AllCops:
     - '**/spec/system/**/*'
     - 'app/helpers/spree/base_helper.rb'
     - 'db/schema.rb'
-  TargetRubyVersion: 3.1.2
+  TargetRubyVersion: 3.2.1
 
 Gemspec/DeprecatedAttributeAssignment:
   Enabled: true
@@ -661,13 +661,13 @@ RSpec/PendingWithoutReason: # new in 2.16
   Enabled: true
 RSpec/SortMetadata: # new in 2.14
   Enabled: true
-RSpec/Capybara/NegationMatcher: # new in 2.14
+Capybara/NegationMatcher: # new in 2.14
   Enabled: true
-RSpec/Capybara/SpecificActions: # new in 2.14
+Capybara/SpecificActions: # new in 2.14
   Enabled: true
-RSpec/Capybara/SpecificFinders: # new in 2.13
+Capybara/SpecificFinders: # new in 2.13
   Enabled: true
-RSpec/Capybara/SpecificMatcher: # new in 2.12
+Capybara/SpecificMatcher: # new in 2.12
   Enabled: true
 RSpec/FactoryBot/ConsistentParenthesesStyle: # new in 2.14
   Enabled: true
@@ -676,4 +676,16 @@ RSpec/FactoryBot/FactoryNameStyle: # new in 2.16
 RSpec/Rails/HaveHttpStatus: # new in 2.12
   Enabled: true
 RSpec/Rails/InferredSpecType: # new in 2.14
+  Enabled: true
+Gemspec/DevelopmentDependencies: # new in 1.44
+  Enabled: true
+Lint/UselessRescue: # new in 1.43
+  Enabled: true
+Style/ComparableClamp: # new in 1.44
+  Enabled: true
+Style/RedundantHeredocDelimiterQuotes: # new in 1.45
+  Enabled: true
+Capybara/MatchStyle: # new in 2.17
+  Enabled: true
+RSpec/Rails/MinitestAssertions: # new in 2.17
   Enabled: true

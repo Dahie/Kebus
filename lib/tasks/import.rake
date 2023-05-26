@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # commands used to deploy a Rails application
 namespace :kebus do
   desc "import from exported geojson"
@@ -10,7 +12,7 @@ namespace :kebus do
       region_data.dig('properties', 'apps').each do |app_data|
         attributes = app_data.slice('title', 'play_store_url', 'app_store_url', 'web_store_url', 'website_url', 'huawei_store_url', 'created_at', 'updated_at')
         app = App.find_or_create_by(attributes)
-        AppRegion.create(region: region, app: app)
+        AppRegion.create(region:, app:)
       end
     end
   end

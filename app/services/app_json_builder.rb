@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AppJsonBuilder
   def apps
     App.includes(:app_regions, :regions).all.map do |app|
