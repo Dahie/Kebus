@@ -8,6 +8,7 @@ ruby '3.2.1'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.0"
 gem 'activerecord-postgis-adapter'
+gem 'friendly_id', '~> 5.4.0'
 gem 'rgeo'
 gem 'rgeo-geojson'
 gem "rgeo-proj4"

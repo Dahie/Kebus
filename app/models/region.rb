@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class Region < ApplicationRecord
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
   has_many :app_regions, dependent: :destroy
   has_many :apps, through: :app_regions
 
