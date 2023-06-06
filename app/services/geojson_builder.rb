@@ -29,7 +29,10 @@ class GeojsonBuilder
       type: "Feature",
       properties: {
         title: region.title,
-        apps: region.apps.map { |app| app.serializable_hash }
+        slug: region.slug,
+        apps: region.apps.map { |app| app.serializable_hash },
+        area: region.area&.area,
+        notes: region.notes
       },
       geometry: RGeo::GeoJSON.encode(region.area)
     }
