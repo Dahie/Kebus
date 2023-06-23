@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_06_064945) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_23_064354) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
@@ -55,6 +55,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_06_064945) do
     t.geometry "area", limit: {:srid=>0, :type=>"geometry"}
     t.text "wkt_string"
     t.string "slug"
+    t.text "notes"
+    t.text "description"
     t.index ["slug"], name: "index_regions_on_slug", unique: true
   end
 
