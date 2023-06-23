@@ -1,5 +1,17 @@
 # README
 
+
+
+## Development
+
+Install Postgres.app
+
+# connect to SQL and run `CREATE EXTENSION postgis;`
+
+    brew install libgeos
+    bundle
+    rails db:setup
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
