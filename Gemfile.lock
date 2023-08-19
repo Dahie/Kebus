@@ -197,7 +197,7 @@ GEM
       rubocop (~> 1.21)
       ruby-openai (~> 3.7)
     public_suffix (5.0.1)
-    puma (5.6.6)
+    puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.7)
@@ -381,7 +381,7 @@ DEPENDENCIES
   jsbundling-rails
   pg (~> 1.5)
   pleasegpt
-  puma (~> 5.0)
+  puma (~> 5.6)
   rails (~> 7.0.0)
   rails_admin (~> 3.1)
   redis (~> 4.0)
