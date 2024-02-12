@@ -57,6 +57,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_23_064354) do
     t.string "slug"
     t.text "notes"
     t.text "description"
+    t.string "location_tags"
     t.index ["slug"], name: "index_regions_on_slug", unique: true
   end
 
